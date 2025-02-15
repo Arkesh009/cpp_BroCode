@@ -24,7 +24,7 @@ public:
 
 int main()
 {
-    car car1;
+    car car1, car2;
     cout << "Enter the car model\n";
     getline(cin, car1.model);
 
@@ -37,6 +37,10 @@ int main()
     car1.speed();
     car1.paint();
     car1.horn();
+
+    car2.speed();
+    car2.paint();
+    car2.horn();
 
     return 0;
 }
