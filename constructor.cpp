@@ -27,5 +27,12 @@ int main()
     cout << car1.year << "\n";
     cout << car1.topSpeed << "\n";
 
+    car car2("Lamborghini", "Red", 2000, 330);
+
+    cout << car2.model << "\n";
+    cout << car2.color << "\n";
+    cout << car2.year << "\n";
+    cout << car2.topSpeed << "\n";
+
     return 0;
 }
