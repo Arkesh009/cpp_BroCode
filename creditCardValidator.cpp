@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 int getDigits(const int number);
 int sumOddDigits(const string cardNum);
 int sumEvenDigits(const string cardNum);
