@@ -20,5 +20,5 @@ void pairFunc(int x, int y){
     p.first = x;
     p.second = y;
 
-    cout << p.first << ", " << p.second;
+    cout << "{" << p.first << ", " << p.second << "}";
 }
