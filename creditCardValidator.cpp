@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int getDigits(const int number);
@@ -15,30 +15,37 @@ int main()
 
     result = sumOddDigits(cardNum) + sumEvenDigits(cardNum);
     cout << result << '\n';
-    if(result%10 == 0 && cardNum.size() == 16 ){
-        
+    if (result % 10 == 0 && cardNum.size() == 16)
+    {
+
         cout << "Your Credit card number is VALID\n";
     }
-    else{
+    else
+    {
         cout << "Number NOT VALID\n";
     }
 
-return 0;
+    return 0;
 }
 
-int getDigits(const int number){
-    return number % 10 + (number/10 % 10);
+int getDigits(const int number)
+{
+    return number % 10 + (number / 10 % 10);
 }
-int sumOddDigits(const string cardNum){
-    int sum=0;
-    for(int i=cardNum.size()-1; i>=0; i-=2){
+int sumOddDigits(const string cardNum)
+{
+    int sum = 0;
+    for (int i = cardNum.size() - 1; i >= 0; i -= 2)
+    {
         sum += cardNum[i] - '0';
     }
     return sum;
 }
-int sumEvenDigits(const string cardNum){
-    int sum=0;
-    for(int i=cardNum.size()-2; i>=0; i-=2){
+int sumEvenDigits(const string cardNum)
+{
+    int sum = 0;
+    for (int i = cardNum.size() - 2; i >= 0; i -= 2)
+    {
         sum += getDigits((cardNum[i] - '0') * 2);
     }
     return sum;
