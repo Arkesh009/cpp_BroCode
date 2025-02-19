@@ -63,5 +63,7 @@ int main()
         cout << i << "\n";
     }
 
+    cout << "Checking if v1 is empty: " << v1.empty();
+
     return 0;
 }
