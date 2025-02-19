@@ -39,25 +39,27 @@ int main()
     v3.insert(v3.begin() + 2, v2.begin(), v2.end());
     // printin v3 after inserting v2 in it
     for (auto i : v3)
-    {   
-        //100,10,10,10,10,10,10,20
+    {
+        // 100,10,10,10,10,10,10,20
         cout << i << "\n";
     }
 
-    //erasing 6 values from v3
-    v3.erase(v3.begin()+1, v3.begin()+7);
+    // erasing 6 values from v3
+    v3.erase(v3.begin() + 1, v3.begin() + 7);
     cout << "V3 after erasing values:\n";
-    for(auto i: v3){
+    for (auto i : v3)
+    {
         cout << i << "\n";
     }
 
     v1.push_back(99);
     v1.push_back(99);
-    //swaping vectors
+    // swaping vectors
     v3.swap(v1);
 
     cout << "V3 after swaping values with v1 = 99,99:\n";
-    for(auto i:v3){
+    for (auto i : v3)
+    {
         cout << i << "\n";
     }
 
