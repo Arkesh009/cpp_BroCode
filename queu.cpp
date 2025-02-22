@@ -16,4 +16,5 @@ int main()
     q.pop();
     cout << q.front();
     return 0;
+    // rest of the options are same as in stacks
 }
