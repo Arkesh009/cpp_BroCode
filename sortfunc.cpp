@@ -24,7 +24,7 @@ int main()
    cout << "\n";
  
    //sorting in decending order
-   sort(v1.begin(), v1.end(), greater<int>());// greater<int> is an inbuilt comparator
+   sort(v1.begin(), v1.end(), greater<int>());// greater<int> is an inbuilt comparator/functor
    cout << "Sorted v1 in decending: ";
    for(auto i:v1){
     cout << i << " ";
