@@ -7,8 +7,8 @@ int main()
     vector<int> v2(v1);
     vector<pair<int, int>> vp;
 
-    v2.push_back(20);
-    vp.emplace_back(8, 9);
+    v2.push_back(20); // assumes the object is already created
+    vp.emplace_back(8, 9);// creates in-place objects
     cout << "Printing element of v1\n";
     vector<int>::iterator it = v1.begin();
     it++;
