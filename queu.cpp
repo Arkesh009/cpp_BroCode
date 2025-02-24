@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    // values can only be poped in the same order as they get pushed in
     queue<int> q;
     q.push(1);
     q.push(2);
