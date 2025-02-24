@@ -4,8 +4,9 @@ using namespace std;
 int main()
 {
     // Data is not stored in a liner structure
-    //  its managed in a tree pattarn
+    //  its managed in a tree pattarn (Max_heap or Min_heap)
     // size swap empty rest are same as stack
+    // keeps the priority value at top
     priority_queue<int> pq; // this is max heap
     // Time complexity of push, pop = log(n)
     // Time complexit of top() = O(n)

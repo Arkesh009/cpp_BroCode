@@ -4,6 +4,8 @@ using namespace std;
 int main()
 {
     // List declaration
+    // can not access random memory location
+    // ex: l[2] is not valid argument
     list<int> ls;
     ls.push_back(30);
     ls.emplace_back(40);
