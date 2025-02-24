@@ -63,7 +63,11 @@ int main()
         cout << i << "\n";
     }
 
-    cout << "Checking if v1 is empty: " << v1.empty();
+    cout << "Checking if v1 is empty: " << v1.empty() << "\n";
+
+    cout << "value at index 2: " << v2[1] << " " << v2.at(1) << "\n";
+
+    cout << "value at front and back of v3: " << v3.front() << " " << v3.back() << "\n";
 
     return 0;
 }
