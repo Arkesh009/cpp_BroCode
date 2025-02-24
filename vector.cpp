@@ -7,8 +7,8 @@ int main()
     vector<int> v2(v1);
     vector<pair<int, int>> vp;
 
-    v2.push_back(20);      // assumes the object is already created
-    vp.emplace_back(8, 9); // creates in-place objects
+    v2.push_back(20); // assumes the object is already created
+    vp.emplace_back(8, 9);// creates in-place objects
     cout << "Printing element of v1\n";
     vector<int>::iterator it = v1.begin();
     it++;
@@ -68,6 +68,7 @@ int main()
     cout << "value at index 2: " << v2[1] << " " << v2.at(1) << "\n";
 
     cout << "value at front and back of v3: " << v3.front() << " " << v3.back() << "\n";
+
 
     return 0;
 }
