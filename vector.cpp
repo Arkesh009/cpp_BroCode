@@ -69,5 +69,8 @@ int main()
 
     cout << "value at front and back of v3: " << v3.front() << " " << v3.back() << "\n";
 
+
     return 0;
 }
+// size, capacity, push_back, pop_back, emplace_back, at(), [], front, back = Time complexity O(1)
+// erase, insert, clear, empty = Time complexity O(n)
