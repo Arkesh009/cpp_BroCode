@@ -1,30 +1,34 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class stove{
-    private:
+class stove
+{
+private:
     int temprature = 0;
 
-    public:
-    stove(int temprature){
+public:
+    stove(int temprature)
+    {
         setTemp(temprature);
     }
-    int getTemp(){
+    int getTemp()
+    {
         return temprature;
     }
 
-    void setTemp(int temprature){
-        this -> temprature = 100;
+    void setTemp(int temprature)
+    {
+        this->temprature = 100;
     }
 };
 
 int main()
 {
-   stove stove1(0);
+    stove stove1(0);
 
-   stove1.setTemp(200);
+    stove1.setTemp(200);
 
-   cout << "The temprature is: " << stove1.getTemp();
-   
-   return 0;
+    cout << "The temprature is: " << stove1.getTemp();
+
+    return 0;
 }
