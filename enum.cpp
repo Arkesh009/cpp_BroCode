@@ -1,11 +1,20 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-enum days{mon, tue, wed, thu, fri, sat, sun};
+enum days
+{
+    mon,
+    tue,
+    wed,
+    thu,
+    fri,
+    sat,
+    sun
+};
 
 int main()
 {
-    days week = thu;    
+    days week = thu;
 
     switch (week)
     {
@@ -35,6 +44,6 @@ int main()
         cout << "Invalid input\n";
         break;
     }
-   
-   return 0;
+
+    return 0;
 }
