@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 void showBalance(double balance);
@@ -10,7 +10,8 @@ int main()
     double balance = 0;
     int choice = 0;
 
-    do{
+    do
+    {
         cout << "*****************\n";
         cout << "Enter the choice:\n";
         cout << "*****************\n";
@@ -24,60 +25,67 @@ int main()
         cin.clear();
         fflush(stdin);
 
-        
-        switch(choice){
-            case 1:
+        switch (choice)
+        {
+        case 1:
             showBalance(balance);
             break;
 
-            case 2:
+        case 2:
             balance += deposit();
             break;
 
-            case 3:
+        case 3:
 
             balance -= withdraw(balance);
             break;
 
-            case 4:
+        case 4:
             cout << "Thankyou\n";
             break;
 
-            default:
+        default:
             cout << "Invalid Input\n";
         }
 
-    }while (choice != 4);
-   
+    } while (choice != 4);
 
-return 0;
+    return 0;
 }
 
-void showBalance(double balance){
+void showBalance(double balance)
+{
     cout << "Your Balance is " << setprecision(2) << fixed << balance << endl;
 }
 
-double deposit(){
+double deposit()
+{
     double amount = 0;
     cout << "Enter deposit amount: ";
     cin >> amount;
-    if(amount > 0){
+    if (amount > 0)
+    {
         return amount;
-    }else{
+    }
+    else
+    {
         cout << "Invalid amount\n";
         return 0;
     }
     return amount;
 }
 
-double withdraw(double balance){
+double withdraw(double balance)
+{
     double amount = 0;
     cout << "Enter withraw amount: ";
     cin >> amount;
-    if(amount < balance){
+    if (amount < balance)
+    {
         return amount;
     }
-    else{
+    else
+    {
         cout << "Invalid Amount:\n";
         return 0;
     }
