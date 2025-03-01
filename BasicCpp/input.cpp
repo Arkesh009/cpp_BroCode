@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -7,7 +7,7 @@ int main()
     cin >> a;
     getline(cin >> ws, s);
 
-    cout<<a;
-    cout<<s;
-return 0;
+    cout << a;
+    cout << s;
+    return 0;
 }
