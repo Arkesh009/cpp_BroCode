@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -6,9 +6,9 @@ int main()
 
     cin >> a >> b;
 
-    c = sqrt(pow(a,2) + pow(b,2));
+    c = sqrt(pow(a, 2) + pow(b, 2));
 
     cout << c;
 
-return 0;
+    return 0;
 }
