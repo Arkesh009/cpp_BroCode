@@ -5,15 +5,12 @@ using namespace std;
 
 bool isPrime(int n)
 {
-    if (n <= 1)
-    {
+    if (n <= 1){
         return false;
     }
 
-    for (int i = 2; i <= sqrt(n); i++)
-    {
-        if (n % i == 0)
-        {
+    for (int i = 2; i <= sqrt(n); i++){
+        if (n % i == 0){
             return false;
         }
     }
@@ -27,12 +24,10 @@ int main()
     cout << "Enter num:\n";
     cin >> n;
 
-    if (isPrime(n))
-    {
+    if (isPrime(n)){
         cout << n << " is a Prime number\n";
     }
-    else
-    {
+    else{
         cout << n << " is not a Prime number\n";
     }
 
