@@ -1,6 +1,7 @@
 // Write a program to check if a string is a palindrome.
 
 #include <bits/stdc++.h>
+#include <chrono>
 using namespace std;
 
 // boolean func to to check palindrome
@@ -25,7 +26,15 @@ int main()
     cout << "Enter the string\n";
     getline(cin, s);
 
-    if (isPalindrome(s))
+    auto start = chrono::high_resolution_clock::now();
+
+    bool result = isPalindrome(s);
+
+    auto end = chrono::high_resolution_clock::now();
+
+    auto duration = chrono::duration_cast<chrono::microseconds>(end-start);
+
+    if (result)
     {
         cout << "its a palindrome\n";
     }
@@ -33,6 +42,8 @@ int main()
     {
         cout << "its not\n";
     }
+
+    cout << "Time taken by function: " << duration.count() << "ms\n";
 
     return 0;
 }
