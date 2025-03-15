@@ -47,7 +47,7 @@ void inputFunc(list<int> &l)
 
 list<int> mergeLists(const list<int> &l1, const list<int> &l2)
 {
-    list<int> mergedList(l1);   
+    list<int> mergedList(l1);
 
     // auto it1 = l1.begin();
     // auto it2 = l2.begin();
@@ -80,7 +80,8 @@ list<int> mergeLists(const list<int> &l1, const list<int> &l2)
     // }
     // ----
 
-    for(auto i:l2){
+    for (auto i : l2)
+    {
         mergedList.push_back(i);
     }
 
