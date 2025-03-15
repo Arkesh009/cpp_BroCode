@@ -15,7 +15,7 @@ int main()
     cout << "-----------------\n";
     cout << "1. Push Front\n2. Push Back\n3. Pop Front\n4. Pop back\n0. Exit\n";
 
-    for (int a = true; a != 0;)
+    while (true)
     {
         cout << "Select an option\n";
         int option;
@@ -37,7 +37,7 @@ int main()
         else if (option == 3)
         {
             cout << "One element poped from front\n";
-            popBack(dl);
+            popFront(dl);
         }
         else if (option == 4)
         {
@@ -77,12 +77,24 @@ void pushBack(list<int> &dl, int n)
 
 void popFront(list<int> &dl)
 {
-
-    dl.pop_front();
+    if (!dl.empty())
+    {
+        dl.pop_front();
+    }
+    else
+    {
+        cout << "List is empty, cannot pop from front\n";
+    }
 }
 
 void popBack(list<int> &dl)
 {
-
-    dl.pop_back();
+    if (!dl.empty())
+    {
+        dl.pop_back();
+    }
+    else
+    {
+        cout << "List is empty, cannot pop from back\n";
+    }
 }
