@@ -43,41 +43,48 @@ void inputFunc(list<int> &l)
         cin >> element;
         l.push_back(element);
     }
-    l.sort(); // Ensure the list is sorted
 }
 
 list<int> mergeLists(const list<int> &l1, const list<int> &l2)
 {
-    list<int> mergedList;
-    auto it1 = l1.begin();
-    auto it2 = l2.begin();
+    list<int> mergedList(l1);   
 
-    while (it1 != l1.end() && it2 != l2.end())
-    {
-        if (*it1 < *it2)
-        {
-            mergedList.push_back(*it1);
-            ++it1;
-        }
-        else
-        {
-            mergedList.push_back(*it2);
-            ++it2;
-        }
+    // auto it1 = l1.begin();
+    // auto it2 = l2.begin();
+
+    // while (it1 != l1.end() && it2 != l2.end())
+    // {
+    //     if (*it1 < *it2)
+    //     {
+    //         mergedList.push_back(*it1);
+    //         ++it1;
+    //     }
+    //     else
+    //     {
+    //         mergedList.push_back(*it2);
+    //         ++it2;
+    //     }
+    // }
+
+    // // Add remaining elements
+    // while (it1 != l1.end())
+    // {
+    //     mergedList.push_back(*it1);
+    //     ++it1;
+    // }
+
+    // while (it2 != l2.end())
+    // {
+    //     mergedList.push_back(*it2);
+    //     ++it2;
+    // }
+    // ----
+
+    for(auto i:l2){
+        mergedList.push_back(i);
     }
 
-    // Add remaining elements
-    while (it1 != l1.end())
-    {
-        mergedList.push_back(*it1);
-        ++it1;
-    }
-
-    while (it2 != l2.end())
-    {
-        mergedList.push_back(*it2);
-        ++it2;
-    }
+    mergedList.sort();
 
     return mergedList;
 }
