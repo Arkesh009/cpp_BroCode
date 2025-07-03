@@ -13,20 +13,21 @@ int main()
     cout << "Enter the numbers\n";
     cin >> a >> b;
 
-    switch(c){
-        case '+':
-        cout << "Addition = " << a+b << "\n";
+    switch (c)
+    {
+    case '+':
+        cout << "Addition = " << a + b << "\n";
         break;
-        case '-':
-        cout << "Subtraction = " << a-b << "\n";
+    case '-':
+        cout << "Subtraction = " << a - b << "\n";
         break;
-        case '*':
-        cout << "Multiplication = " << a*b << "\n";
+    case '*':
+        cout << "Multiplication = " << a * b << "\n";
         break;
-        case '/':
-        cout << "Division = " << a/b << "\n";
+    case '/':
+        cout << "Division = " << a / b << "\n";
         break;
-        default:
+    default:
         cout << "Invalid input\n";
     }
     return 0;
