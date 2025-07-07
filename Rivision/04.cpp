@@ -10,7 +10,7 @@ int main()
     srand(time(NULL));
     num = (rand() % 100) + 1;
 
-    cout << "****** Number Guessing Game*******\n";
+    cout << "******Number Guessing Game*******\n";
     cout << "Guess the number between 1-100\n";
 
     do
